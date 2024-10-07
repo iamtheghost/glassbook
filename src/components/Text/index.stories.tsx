@@ -18,6 +18,6 @@ export const Default: Story = {
   args: {
     as: "h1",
     children:
-      "be parts correct potatoes sides donkey extra climate happily freedom relationship tape unit tall hung call cat window steady world front graph particular pick",
+      "This text component is polymorphic. It can be instantiated as a div, span, heading tags, and other common HTML elements.",
   },
 };

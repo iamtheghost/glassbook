@@ -50,7 +50,7 @@ export const LoginForm = () => {
         </Text>
         <Input id="password" type="password" />
 
-        <Button type="submit" variant={"solid"} className="mt-10">
+        <Button type="submit" variant={"outline"} size="md" className="mt-10">
           Login
         </Button>
       </Stack>

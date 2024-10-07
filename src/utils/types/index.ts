@@ -4,11 +4,11 @@ export type PropsOf<
   C extends keyof JSX.IntrinsicElements | React.JSXElementConstructor<unknown>
 > = JSX.LibraryManagedAttributes<C, React.ComponentPropsWithoutRef<C>>;
 
+/***
+ * Override default html component
+ * can be implemented for polymorphism
+ */
 type AsProp<C extends React.ElementType> = {
-  /**
-   * An override of the default HTML tag.
-   * Can also be another React component.
-   */
   as?: C;
 };
 

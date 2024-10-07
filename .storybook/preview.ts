@@ -16,8 +16,7 @@ const preview: Preview = {
         { name: "Light", value: "#F7F9F2" },
         {
           name: "City",
-          value:
-            "url(https://superdevresources.com/wp-content/uploads/2015/12/new-york-background.jpg)",
+          value: "url(../src/assets/img/city.jpg)",
         },
       ],
       // 👇 Specify default background

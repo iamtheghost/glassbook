@@ -14,8 +14,8 @@ const buttonStyles = cva(
   {
     variants: {
       variant: {
-        solid: "",
-        outline: "border-2",
+        solid: "transition-colors duration-300",
+        outline: "border-2 transition-colors duration-300",
         ghost: "transition-colors duration-300",
         disabled: "disabled",
       },
@@ -33,7 +33,7 @@ const buttonStyles = cva(
       {
         variant: "solid",
         colorscheme: "primary",
-        className: "bg-gray-400 hover:bg-gray-600",
+        className: "bg-gray-400 hover:bg-gray-600 opacity-70",
       },
       {
         variant: "outline",
@@ -45,12 +45,12 @@ const buttonStyles = cva(
         variant: "ghost",
         colorscheme: "primary",
         className:
-          "text-gray-300 bg-transparent hover:bg-primary-100 hover:text-blue-950",
+          "text-gray-300 bg-transparent hover:backdrop-filter hover:backdrop-blur-sm hover:bg-zinc-300 opacity-70 hover:text-blue-950",
       },
       {
         variant: "disabled",
         colorscheme: "primary",
-        className: "text-slate-500 bg-slate-600 bg-opacity-60 disabled",
+        className: "text-neutral-500 bg-slate-600 bg-opacity-60 disabled",
       },
     ],
     defaultVariants: {
