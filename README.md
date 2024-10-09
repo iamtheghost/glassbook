@@ -6,12 +6,12 @@ Lately, I've been fascinated with the front-end design modality known as "glassm
 
 ## Prerequisites / Toolchain
 
-[Storybook](https://storybook.js.org/)
-[NPM](https://www.npmjs.com/)
-[React](https://react.dev/)
-[TypeScript](https://www.typescriptlang.org/)
-[Tailwind](https://tailwindcss.com)
-[Vite](https://vitejs.dev/)
+1. [Storybook](https://storybook.js.org/)
+2. [NPM](https://www.npmjs.com/)
+3. [React](https://react.dev/)
+4. [TypeScript](https://www.typescriptlang.org/)
+5. [Tailwind](https://tailwindcss.com)
+6. [Vite](https://vitejs.dev/)
 
 ```bash
 git clone https://github.com/iamtheghost/glassbook.git
