@@ -8,7 +8,7 @@ const tableStyles = cva(["backdrop-filter", "backdrop-blur-sm", "p-8"], {
   variants: {
     variant: {
       light: "transition-colors duration-300",
-      dark: "border-2 transition-colors duration-300",
+      dark: "transition-colors duration-300 bg-gray-900 bg-opacity-60",
     },
     size: {
       sm: "px-4 py-2 text-sm",
@@ -24,12 +24,12 @@ const tableStyles = cva(["backdrop-filter", "backdrop-blur-sm", "p-8"], {
     {
       variant: "light",
       colorscheme: "primary",
-      className: "bg-gray-400 bg-opacity-60",
+      className: "bg-neutral-300 bg-opacity-60",
     },
     {
       variant: "dark",
       colorscheme: "primary",
-      className: "text-gray-300 border-neutral-700",
+      className: "text-gray-300",
     },
   ],
   defaultVariants: {
@@ -82,7 +82,7 @@ const Table = forwardRef<HTMLDivElement, TableProps>(
             className={cn(tableStyles({ variant, size, className }))}
             {...props}
           >
-            <thead className="bg-neutral-400">
+            <thead className="bg-neutral-400 bg-opacity-60">
               <tr className="w-100 border-b-2 border-black">
                 <th className="px-4 py-2 text-left border-b">
                   <Text color="white">ID</Text>
@@ -106,7 +106,7 @@ const Table = forwardRef<HTMLDivElement, TableProps>(
               {data.map((user) => (
                 <tr
                   key={user.id}
-                  className="hover:bg-slate-300 hover:text-black"
+                  className="hover:bg-zinc-200 hover:text-black hover:bg-opacity-60"
                 >
                   <td className="px-4 py-2 border-b">{user.id}</td>
                   <td className="px-4 py-2 border-b">{user.name}</td>
